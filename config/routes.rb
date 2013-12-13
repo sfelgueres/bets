@@ -1,4 +1,11 @@
 Bets::Application.routes.draw do
+
+  resources :bets
+
+  devise_for :models
+  root "pages#home"
+  get "about" => "pages#about"
+  get "team" => "pages#team"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

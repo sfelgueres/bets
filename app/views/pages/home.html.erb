@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <h1>Welcome to Bets!</h1>
+ 	<% if model_signed_in? %>
+	<%= link_to "New Bet", new_bet_path, class: "btn btn-primary" %>
+	<% else %>
+	<%= link_to "Login", new_model_session_path, class: "btn btn-default" %>
+	<%= link_to "Sign up", new_model_registration_path, class: "btn btn-primary" %>
+	<% end %>
+</div>
